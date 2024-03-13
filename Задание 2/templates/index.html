@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Библиотека</h1>
+    <div class="row">
+
+        {% for bk in book %}
+            <li>
+                <p>Книга:  {{ bk.book_name }} <br>
+                Автор: {{ bk.author.name }} {{ bk.author.last_name }}<br>
+            </p></li>
+        {% endfor %}
+    </div>
+</body>
+</html>
